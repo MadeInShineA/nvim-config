@@ -1,10 +1,13 @@
 return {
   "akinsho/toggleterm.nvim",
   version = "*",
-  config = true,
-  on_open = function(term)
-    vim.cmd("startinsert")
-    term:send("clear", true)
+  config = function()
+    require("toggleterm").setup({
+      -- Add your other setup options here if needed
+    })
+
+    -- Map double Escape to exit terminal mode globally
+    vim.keymap.set("t", "<Esc><Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })
   end,
   keys = {
     { "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Horizontal Terminal (cwd)" },
