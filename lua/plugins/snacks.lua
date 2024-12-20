@@ -1,3 +1,5 @@
+vim.g.snacks_animate = false
+
 return {
   "folke/snacks.nvim",
   priority = 1000,
@@ -17,7 +19,6 @@ return {
     words = { enabled = true },
     -- Custom configuration
     zen = { enabled = true },
-    animate = { enabled = true },
   },
   keys = {
     {
