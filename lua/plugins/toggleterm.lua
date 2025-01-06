@@ -12,5 +12,6 @@ return {
   keys = {
     { "<leader>th", "<cmd>ToggleTerm direction=horizontal<cr>", desc = "Horizontal Terminal (cwd)" },
     { "<leader>tv", "<cmd>ToggleTerm direction=vertical size=80<cr>", desc = "Vertical terminal (cwd)" },
+    { "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", desc = "Vertical terminal (cwd)" },
   },
 }
