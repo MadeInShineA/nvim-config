@@ -4,6 +4,7 @@ return {
     "mfussenegger/nvim-dap",
     "nvim-neotest/nvim-nio",
   },
+  ft = "python",
   config = function()
     local dap, dapui = require("dap"), require("dapui")
     vim.fn.sign_define("DapBreakpoint", { text = "🛑", texthl = "", linehl = "", numhl = "" })
