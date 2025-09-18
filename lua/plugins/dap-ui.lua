@@ -16,10 +16,10 @@ return {
       dapui.open()
     end
     dap.listeners.before.event_terminated.dapui_config = function()
-      dapui.close()
+      --dapui.close()
     end
     dap.listeners.before.event_exited.dapui_config = function()
-      dapui.close()
+      --dapui.close()
     end
     vim.keymap.set("n", "<Leader>dt", ":DapToggleBreakpoint<CR>")
     vim.keymap.set("n", "<Leader>dc", ":DapContinue<CR>")

@@ -4,10 +4,6 @@ return {
     formatters_by_ft = {
       rust = { "dioxus_fmt" },
     },
-    format_on_save = {
-      lsp_fallback = true,
-      timeout_ms = 1000,
-    },
     formatters = {
       dioxus_fmt = {
         command = "dx",

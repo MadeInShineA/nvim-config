@@ -19,19 +19,19 @@ require("catppuccin").setup({
 vim.cmd.colorscheme("catppuccin")
 
 function SetGlobalAutoformat(bool_val)
-    vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
-        callback = function()
-            vim.b.autoformat = bool_val
-        end,
-    })
+  vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+    callback = function()
+      vim.b.autoformat = bool_val
+    end,
+  })
 end
 
 function SetLanguageAutoFormat(language, bool_val)
-  vim.api.nvim_create_autocmd({"FileType"}, {
+  vim.api.nvim_create_autocmd({ "FileType" }, {
     pattern = language,
     callback = function()
       vim.b.autoformat = bool_val
-    end
+    end,
   })
 end
 
