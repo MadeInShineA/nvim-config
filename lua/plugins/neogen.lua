@@ -1,9 +1,15 @@
 return {
   "danymat/neogen",
-  config = true,
-  -- Uncomment next line if you want to follow only stable versions
-  -- version = "*"
-   keys = {
+  config = {
+    languages = {
+      python = {
+        template = {
+          annotation_convention = "numpydoc",
+        },
+      },
+    },
+  },
+  keys = {
     { "<Leader>cc", ":Neogen<CR>", desc = "Generate Documentation with Neogen" },
   },
 }
